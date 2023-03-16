@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-accessories-menu" label="Accessories">
+  <item label="Xarchiver" icon="/usr/share/icons/hicolor/scalable/apps/xarchiver.svg">
+    <action name="Execute">
+      <command>xarchiver</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="SpeedCrunch" icon="/usr/share/pixmaps/speedcrunch.png">
+    <action name="Execute">
+      <command>speedcrunch</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-editors-menu" label="Editors">
+  <item label="Leafpad" icon="/usr/share/icons/hicolor/scalable/apps/leafpad.svg">
+    <action name="Execute">
+      <command>leafpad</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Geany" icon="/usr/share/icons/hicolor/scalable/apps/geany.svg">
+    <action name="Execute">
+      <command>geany</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="Alacritty" icon="/usr/share/pixmaps/Alacritty.svg">
+    <action name="Execute">
+      <command>alacritty</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Xterm" icon="/usr/share/pixmaps/mini.xterm_32x32.xpm">
+    <action name="Execute"><command>xterm</command></action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Firefox" icon="/usr/share/icons/hicolor/48x48/apps/firefox.png">
+    <action name="Execute">
+      <command>firefox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="qBittorrent" icon="/usr/share/icons/hicolor/48x48/apps/qbittorrent.png">
+    <action name="Execute">
+      <command>qbittorrent</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>qBittorrent</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-office-menu" label="Office">
+  <item label="Zathura" icon="/usr/share/icons/hicolor/scalable/apps/org.pwmt.zathura.svg">
+    <action name="Execute">
+      <command>zathura</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-multimedia-menu" label="Multimedia">
+  <item label="VLC media player" icon="/usr/share/icons/hicolor/48x48/apps/vlc.png">
+    <action name="Execute">
+      <command>vlc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-fileman-menu" label="File Managers">
+  <item label="PCMan File Manager" icon="/usr/share/icons/breeze-dark/apps/48/system-file-manager.svg">
+    <action name="Execute">
+      <command>pcmanfm</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-graphics-menu" label="Graphics">
+  <item label="Image Viewer" icon="/usr/share/icons/hicolor/48x48/apps/gpicview.png">
+    <action name="Execute">
+      <command>gpicview</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Customize Look and Feel" icon="/usr/share/icons/breeze-dark/preferences/32/preferences-desktop-theme-applications.svg">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Openbox Configuration Manager" icon="/usr/share/pixmaps/obconf.png" >
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="PulseAudio Volume Control" icon="/usr/share/icons/breeze-dark/preferences/32/preferences-desktop-sound.svg">
+    <action name="Execute">
+      <command>pavucontrol</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  
+  <item label="Tint2 Settings" icon="/usr/share/icons/hicolor/scalable/apps/tint2conf.svg">
+    <action name="Execute">
+      <command>tint2conf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Reconfigure Openbox" icon="/usr/share/icons/breeze-dark/actions/32/view-refresh.svg">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="exit-menu" label="Exit">
+	<item label="Log Out" icon="/usr/share/icons/breeze-dark/actions/32/system-log-out.svg">
+		<action name="Execute">
+			<command>openbox --exit</command>
+			<prompt>Log Out?</prompt>
+		</action>
+	</item>
+	<item label="Restart" icon="/usr/share/icons/breeze-dark/actions/32/system-reboot.svg">
+		<action name="Execute">
+			<command>systemctl reboot</command>
+			<prompt>Restart?</prompt>
+		</action>
+	</item>
+	<item label="Shutdown" icon="/usr/share/icons/breeze-dark/actions/32/system-shutdown.svg">
+		<action name="Execute">
+			<command>systemctl poweroff</command>
+			<prompt>Shutdown?</prompt>
+		</action>
+	</item>
+	<separator />
+	<item label="Hibernate" icon="/usr/share/icons/breeze-dark/actions/32/system-suspend-hibernate.svg">
+		<action name="Execute">
+			<command>systemctl hibernate</command>
+			<prompt>yes</prompt> 
+		</action>
+	</item>
+	<item label="Suspend" icon="/usr/share/icons/breeze-dark/actions/32/system-suspend.svg">
+		<action name="Execute">
+			<command>systemctl suspend</command>
+			<prompt>yes</prompt>
+		</action>
+	</item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <menu id="apps-accessories-menu"/>
+  <menu id="apps-editors-menu"/>
+  <menu id="apps-graphics-menu"/>
+  <menu id="apps-net-menu"/>
+  <menu id="apps-office-menu"/>
+  <menu id="apps-multimedia-menu"/>
+  <menu id="apps-term-menu"/>
+  <menu id="apps-fileman-menu"/>
+  <separator label="System" />
+  <menu id="system-menu"/>
+  <separator />
+  <menu id="exit-menu"/>
+</menu>
+
+</openbox_menu>

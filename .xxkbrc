@@ -1,0 +1,21 @@
+# MainWindow-specific options
+
+XXkb.mainwindow.enable: yes
+XXkb.mainwindow.type: tray
+XXkb.mainwindow.geometry: 20x16+0+0
+XXkb.mainwindow.label.enable: yes
+XXkb.mainwindow.label.text.1: Us
+XXkb.mainwindow.label.text.2: Ua
+XXkb.mainwindow.label.text.3: Ru
+XXkb.mainwindow.label.background: #000000
+XXkb.mainwindow.label.foreground: #EEEEEE
+XXkb.mainwindow.label.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
+
+# Button-specific options
+
+XXkb.button.enable: no
+
+# Operation mode options
+
+XXkb.controls.add_when_start: no
+XXkb.controls.two_state: no
